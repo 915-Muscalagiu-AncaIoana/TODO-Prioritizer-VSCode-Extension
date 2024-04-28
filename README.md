@@ -1,71 +1,41 @@
-# hello-world README
+# TODO Prioritizer README
 
-This is the README for your extension "hello-world". After writing up a brief description, we recommend including the following sections.
+This README details the "TODO Prioritizer" extension, designed to help developers manage and prioritize TODO comments in their JavaScript and TypeScript projects in Visual Studio Code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+TODO Prioritizer enhances your productivity by providing two key features:
 
-For example if there is an image subfolder under your extension project workspace:
+- **Autocomplete TODO Comments**: Automatically suggests `TODO-HIGH`, `TODO-MEDIUM`, or `TODO-LOW` as you type `TODO` in your code, allowing you to set the priority of your task directly.
 
-\!\[feature X\]\(images/feature-x.png\)
+- **Find TODOs Command**: Scans your project for all TODO comments and displays them in a list, organized by priority. This list is accessible via the Command Palette, and clicking on a TODO item will navigate you directly to the file and line where the TODO comment is written.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Screenshots
+
+\!\[Autocomplete Feature\]\(images/autocomplete.png\)
+
+\!\[Find TODOs List\]\(images/find-todos.png\)
+
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+There are no specific requirements for this extension beyond having Visual Studio Code installed. It is compatible with the latest versions of Visual Studio Code, above 1.80.0.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Currently, the TODO Prioritizer does not require any specific settings adjustments. It works out of the box with the default configuration.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Occasionally, the TODO list may not refresh automatically if TODO comments are added or modified. A manual refresh of the list might be necessary.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+Initial release of TODO Prioritizer.
 
-### 1.0.1
+- Autocomplete for `TODO-HIGH`, `TODO-MEDIUM`, `TODO-LOW`.
+- New command "Find TODOs" that lists and prioritizes TODO comments in your project.
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using TODO Prioritizer to efficiently manage and navigate your coding tasks!**
