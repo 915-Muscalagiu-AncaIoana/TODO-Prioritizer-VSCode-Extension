@@ -1,7 +1,7 @@
 {
-  "name": "todo-prioritizer",
-  "displayName": "TODO Prioritizer",
-  "description": "Extension which prioritizes the todos in your code according to their importance.",
+  "name": "todo-codetracker",
+  "displayName": "TODO Code Tracker",
+  "description": "Extension which helps you track and prioritize the todos in your code according to their importance.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -22,7 +22,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "todo-prioritizer.findTodos",
+        "command": "todo-codetracker.findTodos",
         "title": "Find TODOs"
       }
     ],

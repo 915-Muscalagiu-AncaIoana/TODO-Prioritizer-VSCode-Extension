@@ -17,9 +17,9 @@ function walkDirectorySync(rootDirPath: any, dirPath : any, fileProcessingCallba
     entries.forEach(entry => {
         const fullPath = path.join(dirPath, entry.name);
         if (entry.isDirectory()) {
-            walkDirectorySync(rootDirPath, fullPath, fileProcessingCallback, todos); // Recurse into subdirectories
+            walkDirectorySync(rootDirPath, fullPath, fileProcessingCallback, todos);
         } else {
-            fileProcessingCallback(rootDirPath, fullPath, todos); // Process each file
+            fileProcessingCallback(rootDirPath, fullPath, todos); 
         }
     });
 }
@@ -56,7 +56,7 @@ function processFileSync(rootDirPath : any, filePath : any, todos : any) {
 export function activate(context: vscode.ExtensionContext) {
 
 	
-	let disposable = vscode.commands.registerCommand('todo-prioritizer.findTodos', () => {
+	let disposable = vscode.commands.registerCommand('todo-codetracker.findTodos', () => {
 		const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage('No open text editor');
