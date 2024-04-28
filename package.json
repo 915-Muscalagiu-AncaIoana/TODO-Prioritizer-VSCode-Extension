@@ -1,0 +1,67 @@
+{
+  "name": "todo-prioritizer",
+  "displayName": "TODO Prioritizer",
+  "description": "Extension which prioritizes the todos in your code according to their importance.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript"
+  ],
+  "main": "./out/extension.js",
+  
+  "contributes": {
+    "commands": [
+      {
+        "command": "todo-prioritizer.findTodos",
+        "title": "Find TODOs"
+      }
+    ],
+    "languages": [
+      {
+          "id": "javascript",
+          "extensions": [".js"],
+          "aliases": ["JavaScript", "javascript", "js"]
+      },
+      {
+          "id": "typescript",
+          "extensions": [".ts"],
+          "aliases": ["TypeScript", "typescript", "ts"]
+      }
+  ],
+  "completionItemProvider": [
+      {
+          "language": "javascript",
+          "provider": "./src/extension"
+      },
+      {
+          "language": "typescript",
+          "provider": "./src/extension"
+      }
+  ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.88.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
