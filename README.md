@@ -4,11 +4,11 @@
 
 ## Features
 
-TODO Prioritizer enhances your productivity by providing two key features:
+TODO Code Tracker enhances your productivity by providing two key features:
 
 - **Autocomplete TODO Comments**: Automatically suggests `TODO-HIGH`, `TODO-MEDIUM`, or `TODO-LOW` as you type `TODO` in your code, allowing you to set the priority of your task directly.
 
-- **Find TODOs Command**: Scans your project for all TODO comments and displays them in a list, organized by priority. This list is accessible via the Command Palette, and clicking on a TODO item will navigate you directly to the file and line where the TODO comment is written.
+- **Find TODOs Command**: Scans your project for all TODO comments and displays them in a list, organized by priority. This list is accessible via the Command Palette or through Ctrl+Alt+T ( or Cmd+Alt+T for macOs ) keyboard shortcut, and clicking on a TODO item will navigate you directly to the file and line where the TODO comment is written.
 
 ### Screenshots
 
