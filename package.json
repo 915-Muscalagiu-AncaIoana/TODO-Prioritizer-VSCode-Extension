@@ -26,6 +26,13 @@
         "title": "Find TODOs"
       }
     ],
+    "keybindings": [
+      {
+          "command": "todo-codetracker.findTodos",
+          "key": "ctrl+alt+t",
+          "mac": "cmd+alt+t"
+      }
+  ],
     "languages": [
       {
           "id": "javascript",
