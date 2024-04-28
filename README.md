@@ -12,14 +12,14 @@ TODO Prioritizer enhances your productivity by providing two key features:
 
 ### Screenshots
 
-\!\[Autocomplete Feature\]\(images/autocomplete.png\)
+![Autocomplete Feature](images/autocomplete.png)
 
-\!\[Find TODOs List\]\(images/find-todos.png\)
+![Find TODOs List](images/find-todos.png)
 
 
 ## Requirements
 
-There are no specific requirements for this extension beyond having Visual Studio Code installed. It is compatible with the latest versions of Visual Studio Code, above 1.80.0.
+There are no specific requirements for this extension beyond having Visual Studio Code installed. It is compatible with the latest versions of Visual Studio Code, > 1.80.0.
 
 ## Extension Settings
 
