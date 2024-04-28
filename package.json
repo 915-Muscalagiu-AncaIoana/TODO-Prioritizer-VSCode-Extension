@@ -1,8 +1,9 @@
 {
   "name": "todo-codetracker",
   "displayName": "TODO Code Tracker",
+  "publisher": "AncaMuscalagiu",
   "description": "Extension which helps you track and prioritize the todos in your code according to their importance.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.80.0"
   },
