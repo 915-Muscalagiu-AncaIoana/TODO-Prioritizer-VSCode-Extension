@@ -2,9 +2,9 @@
 
 All notable changes to the "TODO Code Tracker" extension will be documented in this file.
 
-## [Unreleased]
+## Released
 
-## [1.0.0] - 2023-04-28
+## 1.0.0 - 2023-04-28
 ### Added
 - **Autocomplete TODO Comments Feature**: Introduces autocompletion for `TODO-HIGH`, `TODO-MEDIUM`, `TODO-LOW` when you start typing `TODO` in your JavaScript or TypeScript files. This helps in setting the priority of your tasks directly from your code editor.
   
