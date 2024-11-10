@@ -8,7 +8,7 @@ TODO Code Tracker enhances your productivity by providing two key features:
 
 - **Autocomplete TODO Comments**: Automatically suggests `TODO-HIGH`, `TODO-MEDIUM`, or `TODO-LOW` as you type `TODO` in your code, allowing you to set the priority of your task directly.
 
-- **Find TODOs Command**: Scans your project for all TODO comments and displays them in a list, organized by priority. This list is accessible via the Command Palette or through Ctrl+Alt+T ( or Cmd+Alt+T for macOs ) keyboard shortcut, and clicking on a TODO item will navigate you directly to the file and line where the TODO comment is written.
+- **Find TODOs Command**: Scans your project for all TODO comments and displays them in a list, organized by priority. The priority is either deduced by the keywords 'TODO-HIGH', 'TODO-MEDIUM', 'TODO-LOW' or automatically estimated using an ML model. This list is accessible via the Command Palette or through Ctrl+Alt+T ( or Cmd+Alt+T for macOs ) keyboard shortcut, and clicking on a TODO item will navigate you directly to the file and line where the TODO comment is written.
 
 ### Screenshots
 
@@ -21,7 +21,10 @@ TODO Code Tracker enhances your productivity by providing two key features:
 
 ## Requirements
 
-This extension doesn't have any particular prerequisites other than requiring Visual Studio Code to be installed. It works seamlessly with the most recent versions of Visual Studio Code, more precisely with version 1.80.0 and higher.
+This extension requires Python > 3.9 and `pip` > 21.2.4 for the machine learning model to run inference. If these versions are not available, TODOs that lack a specified priority keyword will automatically be considered of the least priority, as in version 1 of the extension, where priority prediction was not available.
+
+Additionally, the extension requires Visual Studio Code version 1.80.0 or higher. It works seamlessly with the most recent versions of Visual Studio Code.
+
 
 ## Extension Settings
 
