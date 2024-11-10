@@ -23,6 +23,8 @@ TODO Code Tracker enhances your productivity by providing two key features:
 
 This extension requires Python > 3.9 and `pip` > 21.2.4 for the machine learning model to run inference. If these versions are not available, TODOs that lack a specified priority keyword will automatically be considered of the least priority, as in version 1 of the extension, where priority prediction was not available.
 
+Kepp in mind that the Extension will use your local Python installation to aquire the necessary packages to run the inference endpoint!
+
 Additionally, the extension requires Visual Studio Code version 1.80.0 or higher. It works seamlessly with the most recent versions of Visual Studio Code.
 
 
@@ -41,5 +43,11 @@ Initial release of TODO Code Tracker.
 
 - Autocomplete for `TODO-HIGH`, `TODO-MEDIUM`, `TODO-LOW`.
 - New command "Find TODOs" that lists and prioritizes TODO comments in your project.
+
+### 2.0.0
+
+Enhanced release of TODO Code Tracker with machine learning-based priority estimation.
+
+- Automatically assigns priority levels to TODO comments without a specified priority keyword, based on the comment's content.
 
 **Enjoy using TODO Code Tracker to efficiently manage and navigate your coding tasks!**
