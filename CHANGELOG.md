@@ -16,4 +16,21 @@ All notable changes to the "TODO Code Tracker" extension will be documented in t
 ### Known Issues
 - The TODO list may not refresh automatically when new TODO comments are added or existing ones are modified. Users may need to manually refresh the list to see updates.
 
+
+## 2.0.0 - 2024-11-10
+### Added
+- **Machine Learning Priority Estimation**: Integrated a machine learning model that automatically assigns priority levels to TODO comments without a specified priority keyword. The model infers priority based on the content of each TODO comment, enhancing productivity by reducing manual prioritization. A local inference API has been added, enabling the model to run directly on your machine and serve predictions in real-time, without requiring an internet connection. This allows the extension to operate fully offline while providing intelligent priority suggestions.
+
+### Requirements Update
+- **Python and `pip` Version Requirements**: The extension now requires Python > 3.9 and `pip` > 21.2.4 for running the inference model. If these versions are not available, TODO comments without a specified priority keyword will be automatically set to the least priority, consistent with the behavior in version 1.0.0.
+
+
+### Fixed
+- No specific fixes were added in this release.
+
+### Known Issues
+- The TODO list may not refresh automatically when new TODO comments are added or existing ones are modified. Users may need to manually refresh the list to see updates.
+- Performance of the priority estimation model may vary with larger codebases due to the added computational load from the inference API. Optimization improvements are planned for future releases.
+
 We hope you find the "TODO Code Tracker" extension useful in managing your coding tasks more efficiently!
+
