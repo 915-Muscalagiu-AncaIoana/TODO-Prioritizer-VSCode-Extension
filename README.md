@@ -23,7 +23,7 @@ TODO Code Tracker enhances your productivity by providing two key features:
 
 This extension requires Python > 3.9 and `pip` > 21.2.4 for the machine learning model to run inference. If these versions are not available, TODOs that lack a specified priority keyword will automatically be considered of the least priority, as in version 1 of the extension, where priority prediction was not available.
 
-Kepp in mind that the Extension will use your local Python installation to aquire the necessary packages to run the inference endpoint!
+Keep in mind that the Extension will use your local Python installation to aquire the necessary packages to run the inference endpoint! At the first activation of the extension there will be a delay until the requirements are installed and the inference endpoint starts.
 
 Additionally, the extension requires Visual Studio Code version 1.80.0 or higher. It works seamlessly with the most recent versions of Visual Studio Code.
 
